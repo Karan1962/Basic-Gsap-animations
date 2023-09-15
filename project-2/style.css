@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kumar+One+Outline&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,body{
+  width:100%;
+  height:100%;
+  margin: 0;
+  padding:0;
+}
+nav{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index:99;
+  margin-top:20px;
+}
+.main-img{
+  width: 40%;
+  margin-top: 3rem;
+  margin-left:6rem;
+}
+ul li a{
+  text-decoration: none;
+  color:black;
+  font-family: sans-serif;
+}
+ul li{
+  list-style: none;
+  
+}
+ul{
+  display: flex;
+  gap: 20px;
+}
+
+.sidebar{
+  width: 30%;
+  background: rgb(253, 109, 138);
+  position: fixed;
+  height: 100vh;
+  z-index: -1;
+}
+.content-container{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding-top:59px
+}
+.main-title {
+  transform: rotate(-90deg);
+  margin-top: 10rem;
+  font-size: 3rem;
+  font-family: "Kumar One Outline", cursive;
+}
+
+.main-info {
+  transform: rotate(-90deg);
+  font-family: sans-serif;
+  text-align: center;
+  width: 200px;
+  margin-bottom: 5rem;
+  margin-left: 7rem;
+}
+
+@media (max-width:1200px) {
+   .sidebar{
+    height:100vh
+   }
+   .main-img{
+    width:50%
+   }
+}
+@media (max-width:911px) {
+  .navbar{
+    justify-content: space-between;
+  }
+ .logo-container h1{
+  padding-left: 30px;
+  font-size: 2rem;
+ }
+ ul li a{
+  font-size: 1.6rem;
+ }
+ ul{
+  padding-left: 30px;
+  margin-right:50px
+ }
+ .main-img{
+  width:75%;
+  margin-top:0;
+  margin-left:0;
+ }
+ .content-container{
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  padding-top: 200px;
+ }
+ .main-title{
+  transform: rotate(0deg);
+  margin-top: 20px;
+  font-size: 4em;
+  width: 70%;
+ }
+ .main-info{
+  transform: rotate(0deg);
+  font-size: 2.5em;
+  margin: 0;
+  width: 70%;
+ }
+}
